@@ -1,4 +1,4 @@
-# Scrapper_LinkedIn
+# Scraper_LinkedIn
 Python Linked-In Scrapper Using selenium and bs4
 
 ## Getting Started
