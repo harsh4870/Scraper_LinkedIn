@@ -50,7 +50,6 @@ for h in range(1,6):
 		time.sleep(10);
 		print (browser.current_url)
 		url = browser.current_url;
-		print("*******************************************Scrolling Start ********************************************")
 		browser.execute_script("window.scrollTo(0, 1500)") 
 		time.sleep(20)
 		html = browser.page_source
@@ -65,7 +64,7 @@ for h in range(1,6):
 #WebDriverWait(browser, 20).until(EC.element_to_be_clickable((By.XPATH, "//input[@value='START WATCHING PAYED ADS' and @type='button']"))).click()
 
 		name = soup.findAll("h1", {"class": "pv-top-card-section__name inline t-24 t-black t-normal"})
-		print("**********************************FULL NAME**********************************")
+		
 		Name_Deatil = []
 		for i in name:
 			Name = re.sub('\n+',' ', i.text)
@@ -84,7 +83,7 @@ for h in range(1,6):
 		print(Summary_Detail)
 
 		header_articles = soup.findAll("h2", {"class":"pv-recent-activity-section-v2__headline t-20 t-black t-normal"})
-		print("**********************************ARTICLES HEADER**********************************")
+		
 		Article_Title = []
 		for i in header_articles:
 			Header_Articles = str(re.sub('\s+',' ', i.text))
@@ -102,7 +101,7 @@ for h in range(1,6):
 				Article_Title = []
 
 		header_experience = soup.findAll("h2",{"class":"pv-profile-section__card-heading t-20 t-black t-normal"})
-		print("**********************************EXPERINCE HEADER**********************************")
+		
 		Experience = []
 		for j in header_experience:
 			Header_Experience = str(re.sub('\s+',' ', j.text))
@@ -128,7 +127,7 @@ for h in range(1,6):
 				Experience = []
 
 		header_education = soup.findAll("h2",{"class":"pv-profile-section__card-heading t-20 t-black t-normal"})
-		print("**********************************EDUCATION HEADER**********************************")
+		
 		Education_Details = []
 		for j in header_education:
 			Header_Education = str(re.sub('\s+',' ', j.text))
@@ -152,7 +151,7 @@ for h in range(1,6):
 				Education_Details = []
 
 		header_skill = soup.findAll("h2",{"class":"pv-profile-section__card-heading t-20 t-black t-normal"})
-		print("**********************************SKILL HEADER**********************************")
+		
 		Skills_Details = []
 		for j in header_skill:
 			Header_Skill = str(re.sub('\s+',' ', j.text))
@@ -172,7 +171,7 @@ for h in range(1,6):
 
 
 		header_accomplishments = soup.findAll("h2",{"class":"card-heading t-20 t-black t-normal fl"})
-		print("**********************************ACCOMPLISHMENTS HEADER**********************************")
+		
 		Accomplishments = []
 		for j in header_accomplishments:
 			Header_Accomplishments = str(re.sub('\s+',' ', j.text))
@@ -193,7 +192,7 @@ for h in range(1,6):
 				Accomplishments = []
 
 		header_interests = soup.findAll("h2",{"class":"card-heading t-20 t-black t-normal"})
-		print("**********************************INTERESTS HEADER**********************************")
+		
 		Interests = []
 		for j in header_interests:
 			Header_Interests = str(re.sub('\s+',' ', j.text))
