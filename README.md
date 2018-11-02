@@ -1,5 +1,5 @@
 # Scraper_LinkedIn
-Python Linked-In Scrapper Using selenium and bs4
+Python Linked-In Scrapper Using selenium and bs4 & data export to excel
 
 ## Getting Started
 
